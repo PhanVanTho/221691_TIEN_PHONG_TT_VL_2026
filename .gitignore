@@ -1,0 +1,18 @@
+# Node
+node_modules/
+
+# Python
+venv/
+__pycache__/
+
+# Laravel
+vendor/
+.env
+
+# Build
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
