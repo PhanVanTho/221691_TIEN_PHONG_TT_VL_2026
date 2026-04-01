@@ -1,0 +1,260 @@
+/* ===== STYLES CHO GIÁO TRÌNH NÂNG CẤP ===== */
+
+.giao-trinh-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background: #fff;
+}
+
+.giao-trinh-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.main-title {
+    font-size: 2.5em;
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+.meta-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.meta-item {
+    background: rgba(255,255,255,0.2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.95em;
+}
+
+.section-title {
+    font-size: 1.8em;
+    color: #667eea;
+    margin: 40px 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #667eea;
+    font-weight: 600;
+}
+
+/* Thông tin học phần */
+.thong-tin-hoc-phan {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.info-item {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 4px solid #667eea;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info-item strong {
+    color: #667eea;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Mục tiêu học phần */
+.muc-tieu {
+    margin: 30px 0;
+}
+
+.clo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.clo-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f0f4ff;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #667eea;
+}
+
+.clo-number {
+    background: #667eea;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1.1em;
+    min-width: 60px;
+    text-align: center;
+}
+
+.clo-content {
+    flex: 1;
+    font-size: 1.05em;
+}
+
+/* Nội dung học phần */
+.noi-dung-hoc-phan {
+    margin: 30px 0;
+}
+
+.chuong {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 25px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.chuong-title {
+    font-size: 1.5em;
+    color: #764ba2;
+    margin: 0 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.chuong-content {
+    margin-top: 15px;
+}
+
+.sub-section {
+    margin: 20px 0;
+    padding-left: 15px;
+    border-left: 3px solid #667eea;
+}
+
+.sub-title {
+    font-size: 1.2em;
+    color: #555;
+    margin: 15px 0 10px 0;
+    font-weight: 600;
+}
+
+.paragraph {
+    margin: 15px 0;
+    text-align: justify;
+    font-size: 1.05em;
+    line-height: 1.9;
+}
+
+.practice-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.practice-item {
+    background: #fff9e6;
+    padding: 15px 20px;
+    border-radius: 6px;
+    border-left: 4px solid #ffc107;
+    font-size: 1.05em;
+}
+
+.evaluation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.eval-item {
+    background: #e8f5e9;
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 4px solid #4caf50;
+}
+
+.eval-item strong {
+    color: #2e7d32;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Tài liệu tham khảo */
+.tai-lieu-tham-khao {
+    background: #f5f5f5;
+    padding: 25px;
+    border-radius: 8px;
+    margin: 30px 0;
+}
+
+.reference-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.ref-item {
+    background: white;
+    padding: 12px 18px;
+    border-radius: 6px;
+    border-left: 4px solid #2196f3;
+    font-size: 1.05em;
+}
+
+/* Error message */
+.error-message {
+    background: #ffebee;
+    border: 2px solid #f44336;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    color: #c62828;
+}
+
+.error-message p {
+    margin: 10px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 1.8em;
+    }
+    
+    .meta-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .clo-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .evaluation-grid {
+        grid-template-columns: 1fr;
+    }
+}

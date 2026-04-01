@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HỆ THỐNG XÂY DỰNG GIÁO TRÌNH AI</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 40px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 300px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>📘 HỆ THỐNG XÂY DỰNG GIÁO TRÌNH TỰ ĐỘNG SỬ DỤNG AI</h2>
+
+    <form id="form">
+        <label>Nhập chủ đề:</label><br>
+        <input type="text" id="chu_de" required style="width: 300px;">
+        <br><br>
+        <button type="submit">🚀 Tạo giáo trình</button>
+    </form>
+
+    <h3>Kết quả:</h3>
+    <textarea id="ket_qua"></textarea>
+
+    <script>
+        document.getElementById("form").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            let chuDe = document.getElementById("chu_de").value;
+
+            let res = await fetch("/tao", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: "chu_de=" + encodeURIComponent(chuDe)
+            });
+
+            let data = await res.json();
+            document.getElementById("ket_qua").value = JSON.stringify(data, null, 2);
+        });
+    </script>
+
+</body>
+
+</html>
